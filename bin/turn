@@ -8,7 +8,7 @@ board=[" ", " ", " ", " ", " ", " ", " ", " ", " "]
 display_board(board)
 
 puts "Where would you like to make your first move?"
-turn
+turn(board)
 input = gets.strip
 
 move(board, input_to_index(input), "X")
