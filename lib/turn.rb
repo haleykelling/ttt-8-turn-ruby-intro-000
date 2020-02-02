@@ -34,7 +34,7 @@ def turn(board)
     puts "Please enter 1-9:"
     input = gets.strip
     input_to_index
-    valid_move? (array, index)
+    valid_move?(array, index)
   end
   move(board, input_to_index(input))
   display_board(board)
