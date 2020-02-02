@@ -30,10 +30,10 @@ def valid_move?(array, index)
 end
 
 def turn(board)
-  until valid_move?(board, input_to_index) == true
+  loop do
     puts "Please enter 1-9:"
     input = gets.strip
-    valid_move?(board, input_to_index(input))
+    break if valid_move?(board, input_to_index(input)) == true
   end
   move(board, input_to_index(input))
   display_board(board)
